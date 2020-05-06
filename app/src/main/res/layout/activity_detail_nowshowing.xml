@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.DetailNowshowingActivity">
+
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/detail_activity_ivposter"
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:contentDescription="@string/poster"
+            android:scaleType="fitCenter"
+            android:src="@drawable/posteravangers"
+            android:background="@drawable/background_activity"
+            app:layout_constraintBottom_toTopOf="@id/detail_activity_tvtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <TextView
+            android:id="@+id/detail_activity_tvtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/poster"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/detail_activity_tvrate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/detail_activity_ivposter"/>
+
+    <TextView
+        android:id="@+id/detail_activity_tvrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/rate_10_0"
+        app:layout_constraintHorizontal_weight="1"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@id/detail_activity_garis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/detail_activity_tvtitle"/>
+
+
+        <View
+            android:id="@+id/detail_activity_garis"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="#000000"
+            app:layout_constraintBottom_toTopOf="@id/detail_activity_tvoverview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/detail_activity_tvrate"/>
+
+        <TextView
+            android:id="@+id/detail_activity_tvoverview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/overview"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@id/detail_activity_tvdesc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/detail_activity_garis"/>
+
+        <TextView
+            android:id="@+id/detail_activity_tvdesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/large_text"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/detail_activity_tvoverview" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

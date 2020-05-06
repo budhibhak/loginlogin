@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Movie</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="poster" />
+    <string name="rate_10_0" />
+    <string name="overview" />
+    <string name="large_text" />
+    <string name="rating" />
+    <string name="nowshowing_tab">Now Showing</string>
+    <string name="upcoming_tab">Upcoming</string>
+    <string name="username" />
+    <string name="password" />
+    <string name="login" />
+    <string name="not_registed" />
+    <string name="register" />
+    <string name="confirmpassword" />
+    <string name="already_registered" />
+
+</resources>
